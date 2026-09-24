@@ -49,3 +49,15 @@ function createSummaryAndThumb_long(pID){
 	var summary = imgtag + '<div style="margin-left: 200px;">' + removeHtmlTag(div.innerHTML,summ) + '</div>';
 	div.innerHTML = summary;
 }
+
+function createSummaryAndThumb_native(pID, thumbnailUrl){
+	var div = document.getElementById(pID);
+	var imgtag = "";
+
+	if(thumbnailUrl){
+		imgtag = '<span id="thumb"><img src="' + thumbnailUrl + '" loading="lazy" height:"' + img_thumb_height + 'px" /></span>';
+	}
+
+	var summary = imgtag + '<div style="margin-left: 80px; height: 110px;">' + removeHtmlTag(div.innerHTML, summary_img) + '</div>';
+	div.innerHTML = summary;
+}
