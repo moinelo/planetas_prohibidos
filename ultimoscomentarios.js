@@ -64,8 +64,5 @@ function showrecentcomments(json)
       document.write('<br/><br/>');
     }
   }
-  document.write('<div style="font-size:78%;text-align:center">
-                 <img src="https://moinelo.github.io/planetas_prohibidos/rss.png" />
-                 <a href="http://planetasprohibidos.blogspot.com/feeds/comments/default"> Suscribete a los comentarios (Atom)</a>
-                 </div>');
+  document.write('<div style="font-size:78%;text-align:center"><img src="https://moinelo.github.io/planetas_prohibidos/rss.png" /><a href="http://planetasprohibidos.blogspot.com/feeds/comments/default"> Suscribete a los comentarios (Atom)</a></div>');
                  }
